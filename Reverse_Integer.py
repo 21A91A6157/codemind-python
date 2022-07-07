@@ -1,11 +1,13 @@
-t=int(input())
-n=abs(t)
+n=int(input())
 res=0
-while(n):
+x=n
+if n<0:
+    n=-n
+while n:
     d=n%10
-    res=(res*10)+d
+    res=res*10+d
     n=n//10
-if t<0:
-    print(-res)
-else:
+if x>0:
     print(res)
+else:
+    print(-res)
