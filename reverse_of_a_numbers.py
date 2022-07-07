@@ -1,7 +1,3 @@
 n=int(input())
-r=0
-while n:
-    rem=n%10
-    r=r*10+rem
-    n=n//10
-print(r)
+a=str(n)
+print(a[::-1])
