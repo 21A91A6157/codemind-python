@@ -14,3 +14,4 @@ while True:
         break
     c+=1
 print(c-d)
+        
