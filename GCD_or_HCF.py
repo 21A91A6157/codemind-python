@@ -1,6 +1,10 @@
-v,k=map(int,input().split())
-l=0
-for i in range(1,v+1 and k+1,1):
-    if v%i==0 and k%i==0:
-        l=i
-print(l)
+def gcd(a,b):
+    if a>b:
+        a,b=b,a
+    c=a
+    while True:
+        if a%c==0 and b%c==0:
+            return c
+        c-=1
+a,b=map(int,input().split())
+print(gcd(a,b))
