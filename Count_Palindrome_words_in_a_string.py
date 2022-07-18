@@ -1,8 +1,6 @@
-n=input()
-n=n.split(' ')
+s=input().lower()
 c=0
-for i in n:
-    i=i.lower()
+for i in s.split():
     if i==i[::-1]:
         c+=1
 print(c)
