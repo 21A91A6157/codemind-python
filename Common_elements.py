@@ -1,8 +1,8 @@
-m,n=map(int,input().split())
+n,m=map(int,input().split())
 a=list(map(int,input().split()))
 b=list(map(int,input().split()))
-x=[]
+c=[]
 for i in a:
-    if i in b and i not in x:
-        x.append(i)
-print(*x)
+    if i in b and i not in c:
+        c.append(i)
+print(*c)
