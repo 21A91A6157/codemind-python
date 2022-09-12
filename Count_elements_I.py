@@ -1,7 +1,8 @@
 n,m=map(int,input().split())
 a=list(map(int,input().split()))
 b=list(map(int,input().split()))
-a=set(a)
-b=set(b)
-c=a.intersection(b)
+c=[]
+for i in a:
+    if i in b and i not in c:
+        c.append(i)
 print(len(c))
