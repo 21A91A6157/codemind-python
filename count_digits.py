@@ -1,16 +1,18 @@
-def fun(n):
-    if n==0:
-        return 1
-    if n<0:
-        n=-n
+def fun(i):
     c=0
-    while n:
+    if i<0:
+        i=-i
+    if i==0:
+        return 1
+    while i:
         c+=1
-        n=n//10
+        i=i//10
     return c
 n=int(input())
 a=list(map(int,input().split()))
-b=[]
+d=[]
 for i in a:
-    b.append(fun(i))
-print(*b)
+    d.append(fun(i))
+print(*d)
+
+    
